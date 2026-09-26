@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post - ConnectHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">ConnectHub</a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="profile.html">Profile</a>
+                <a href="create-post.html">Create Post</a>
+                <button id="logoutBtn" class="logout-btn">Logout</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container small-container">
+
+        <section class="create-card">
+
+            <h1>Create New Post</h1>
+            <p>Share something with the ConnectHub community.</p>
+
+            <form id="postForm">
+
+                <div class="form-group">
+                    <label>What's on your mind?</label>
+
+                    <textarea id="content" rows="7" placeholder="Write something..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Image URL <span>(optional)</span></label>
+
+                    <input type="url" id="image" placeholder="https://example.com/image.jpg">
+                </div>
+
+                <button type="submit" class="primary-btn full-btn">
+                    Publish Post
+                </button>
+
+            </form>
+
+            <p id="postMessage" class="message"></p>
+
+        </section>
+
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script src="js/post.js"></script>
+
+</body>
+
+</html>

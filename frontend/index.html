@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectHub - Social Media</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">ConnectHub</a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="profile.html">Profile</a>
+                <a href="create-post.html">Create Post</a>
+                <button id="logoutBtn" class="logout-btn">Logout</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome-card">
+            <div>
+                <h1>Welcome to ConnectHub 👋</h1>
+                <p>Share your thoughts, connect with people and discover new posts.</p>
+            </div>
+            <a href="create-post.html" class="primary-btn">+ Create Post</a>
+        </section>
+
+        <section class="feed-section">
+            <div class="section-heading">
+                <h2>Latest Posts</h2>
+                <button onclick="loadPosts()" class="refresh-btn">↻ Refresh</button>
+            </div>
+
+            <div id="postsContainer">
+                <div class="loading">Loading posts...</div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
