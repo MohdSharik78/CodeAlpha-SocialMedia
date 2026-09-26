@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://codealpha-socialmedia-uvv6.onrender.com/api";
 
 // Check login
 function checkLogin() {
